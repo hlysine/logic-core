@@ -1,10 +1,10 @@
 import { Solver, Optimize } from 'z3-solver';
-import GridData from '../../../grid';
-import Z3SolverContext from '../z3SolverContext';
-import Z3Module from './z3Module';
+import GridData from '../../../grid.js';
+import Z3SolverContext from '../z3SolverContext.js';
+import Z3Module from './z3Module.js';
 import AreaNumberSymbol, {
   instance as areaNumberInstance,
-} from '../../../symbols/areaNumberSymbol';
+} from '../../../symbols/areaNumberSymbol.js';
 import { Point } from 'grilops';
 
 export default class AreaNumberModule extends Z3Module {

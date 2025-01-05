@@ -1,9 +1,9 @@
-import { handlesFinalValidation } from './events/onFinalValidation';
-import { handlesSymbolValidation } from './events/onSymbolValidation';
-import GridData from './grid';
-import { Color, GridState, RuleState, State } from './primitives';
-import Rule from './rules/rule';
-import Symbol from './symbols/symbol';
+import { handlesFinalValidation } from './events/onFinalValidation.js';
+import { handlesSymbolValidation } from './events/onSymbolValidation.js';
+import GridData from './grid.js';
+import { Color, GridState, RuleState, State } from './primitives.js';
+import Rule from './rules/rule.js';
+import Symbol from './symbols/symbol.js';
 
 export function aggregateState(
   rules: RuleState[],

@@ -1,6 +1,6 @@
-import GridData from '../grid';
-import Instruction from '../instruction';
-import { isEventHandler } from './eventHelper';
+import GridData from '../grid.js';
+import Instruction from '../instruction.js';
+import { isEventHandler } from './eventHelper.js';
 
 export interface SetGridHandler {
   onSetGrid(oldGrid: GridData, newGrid: GridData): GridData;

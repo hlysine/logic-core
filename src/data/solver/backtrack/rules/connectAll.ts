@@ -1,5 +1,5 @@
-import { Position } from '../../../primitives';
-import ConnectAllRule from '../../../rules/connectAllRule';
+import { Position } from '../../../primitives.js';
+import ConnectAllRule from '../../../rules/connectAllRule.js';
 import BTModule, {
   BTColor,
   BTGridData,
@@ -7,7 +7,7 @@ import BTModule, {
   IntArray2D,
   colorToBTTile,
   getOppositeColor,
-} from '../data';
+} from '../data.js';
 
 export default class ConnectAllBTModule extends BTModule {
   public instr: ConnectAllRule;

@@ -1,8 +1,8 @@
-import { AnyConfig, ConfigType } from '../config';
-import GridData from '../grid';
-import { RuleState, State } from '../primitives';
-import CustomIconSymbol from '../symbols/customIconSymbol';
-import Rule, { SearchVariant } from './rule';
+import { AnyConfig, ConfigType } from '../config.js';
+import GridData from '../grid.js';
+import { RuleState, State } from '../primitives.js';
+import CustomIconSymbol from '../symbols/customIconSymbol.js';
+import Rule, { SearchVariant } from './rule.js';
 
 export default class ForesightRule extends Rule {
   private static readonly EXAMPLE_GRID = Object.freeze(

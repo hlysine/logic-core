@@ -1,6 +1,6 @@
 import path from 'path';
 import fg from 'fast-glob';
-import { extractName, stripExtension } from './scriptHelper';
+import { extractName, stripExtension } from './scriptHelper.js';
 
 export interface Config {
   entries: {
@@ -53,12 +53,12 @@ async function generateImports(config: Config) {
 ${
   entry.import === 'default'
     ? modules
-        .map(m => `export ${m.name} from './${stripExtension(m.path)}';`)
+        .map(m => `export ${m.name} from './${stripExtension(m.path)}.js';`)
         .join('\n')
     : modules
         .map(
           m =>
-            `export { ${entry.import} as ${m.name} } from './${stripExtension(m.path)}';`
+            `export { ${entry.import} as ${m.name} } from './${stripExtension(m.path)}.js';`
         )
         .join('\n')
 }`;

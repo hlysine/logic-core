@@ -1,8 +1,8 @@
-import GridData from '../../grid';
-import { Color } from '../../primitives';
-import { instance as undercluedInstance } from '../../rules/undercluedRule';
-import { Serializer } from '../../serializer/allSerializers';
-import Solver from '../solver';
+import GridData from '../../grid.js';
+import { Color } from '../../primitives.js';
+import { instance as undercluedInstance } from '../../rules/undercluedRule.js';
+import { Serializer } from '../../serializer/allSerializers.js';
+import Solver from '../solver.js';
 
 export default class UndercluedSolver extends Solver {
   public readonly id = 'underclued';

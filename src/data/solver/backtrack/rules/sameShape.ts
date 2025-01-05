@@ -1,6 +1,6 @@
-import SameShapeRule from '../../../rules/sameShapeRule';
-import { BTGridData, CheckResult } from '../data';
-import RegionShapeBTModule from './regionShape';
+import SameShapeRule from '../../../rules/sameShapeRule.js';
+import { BTGridData, CheckResult } from '../data.js';
+import RegionShapeBTModule from './regionShape.js';
 
 export default class SameShapeBTModule extends RegionShapeBTModule {
   public instr: SameShapeRule;

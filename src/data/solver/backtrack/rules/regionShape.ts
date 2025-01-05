@@ -1,12 +1,18 @@
-import { Position } from '../../../primitives';
-import RegionShapeRule, { ShapeRegions } from '../../../rules/regionShapeRule';
-import { normalizeShape, positionsToShape, shapeEquals } from '../../../shapes';
+import { Position } from '../../../primitives.js';
+import RegionShapeRule, {
+  ShapeRegions,
+} from '../../../rules/regionShapeRule.js';
+import {
+  normalizeShape,
+  positionsToShape,
+  shapeEquals,
+} from '../../../shapes.js';
 import BTModule, {
   BTGridData,
   BTTile,
   IntArray2D,
   colorToBTTile,
-} from '../data';
+} from '../data.js';
 
 export default abstract class RegionShapeBTModule extends BTModule {
   public instr: RegionShapeRule;

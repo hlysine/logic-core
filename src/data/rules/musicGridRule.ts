@@ -1,13 +1,13 @@
-import { AnyConfig, ConfigType } from '../config';
-import { GridChangeHandler } from '../events/onGridChange';
-import { GridResizeHandler } from '../events/onGridResize';
-import { SetGridHandler } from '../events/onSetGrid';
-import GridData from '../grid';
-import { resize } from '../dataHelper';
-import { Color, RuleState, State } from '../primitives';
-import CustomIconSymbol from '../symbols/customIconSymbol';
-import { ControlLine, Row } from './musicControlLine';
-import Rule, { SearchVariant } from './rule';
+import { AnyConfig, ConfigType } from '../config.js';
+import { GridChangeHandler } from '../events/onGridChange.js';
+import { GridResizeHandler } from '../events/onGridResize.js';
+import { SetGridHandler } from '../events/onSetGrid.js';
+import GridData from '../grid.js';
+import { resize } from '../dataHelper.js';
+import { Color, RuleState, State } from '../primitives.js';
+import CustomIconSymbol from '../symbols/customIconSymbol.js';
+import { ControlLine, Row } from './musicControlLine.js';
+import Rule, { SearchVariant } from './rule.js';
 
 const DEFAULT_SCALLE = [
   new Row('C5', 0.6),

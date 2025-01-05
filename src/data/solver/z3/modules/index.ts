@@ -1,5 +1,5 @@
-import Z3Module from './z3Module';
-import * as modules from './modules.gen';
+import Z3Module from './z3Module.js';
+import * as modules from './modules.gen.js';
 
 const allZ3Modules = new Map<string, Z3Module>();
 

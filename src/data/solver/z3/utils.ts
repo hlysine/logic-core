@@ -1,5 +1,5 @@
 import { RectangularLattice } from 'grilops';
-import { Direction, Orientation } from '../../primitives';
+import { Direction, Orientation } from '../../primitives.js';
 
 export function convertDirection(direction: Orientation | Direction) {
   switch (direction) {

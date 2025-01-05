@@ -1,8 +1,8 @@
-import { AnyConfig, ConfigType } from '../config';
-import GridData from '../grid';
-import { array, minBy } from '../dataHelper';
-import { Color, Position, RuleState, State } from '../primitives';
-import Rule, { SearchVariant } from './rule';
+import { AnyConfig, ConfigType } from '../config.js';
+import GridData from '../grid.js';
+import { array, minBy } from '../dataHelper.js';
+import { Color, Position, RuleState, State } from '../primitives.js';
+import Rule, { SearchVariant } from './rule.js';
 
 export default class ConnectAllRule extends Rule {
   private static readonly CONFIGS: readonly AnyConfig[] = Object.freeze([

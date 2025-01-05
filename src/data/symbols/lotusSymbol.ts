@@ -1,9 +1,9 @@
-import { AnyConfig, ConfigType } from '../config';
-import GridData from '../grid';
-import { Direction, Orientation, State } from '../primitives';
+import { AnyConfig, ConfigType } from '../config.js';
+import GridData from '../grid.js';
+import { Direction, Orientation, State } from '../primitives.js';
 import DirectionLinkerSymbol, {
   DirectionLinkerMap,
-} from './directionLinkerSymbol';
+} from './directionLinkerSymbol.js';
 
 export default class LotusSymbol extends DirectionLinkerSymbol {
   private static readonly linkedDirectionsFromOrientation: {

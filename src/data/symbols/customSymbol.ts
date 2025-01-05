@@ -1,6 +1,6 @@
-import GridData from '../grid';
-import { State } from '../primitives';
-import MultiEntrySymbol from './multiEntrySymbol';
+import GridData from '../grid.js';
+import { State } from '../primitives.js';
+import MultiEntrySymbol from './multiEntrySymbol.js';
 
 export default abstract class CustomSymbol extends MultiEntrySymbol {
   /**

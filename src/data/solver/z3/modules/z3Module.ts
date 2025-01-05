@@ -1,5 +1,5 @@
-import GridData from '../../../grid';
-import Z3SolverContext from '../z3SolverContext';
+import GridData from '../../../grid.js';
+import Z3SolverContext from '../z3SolverContext.js';
 
 export default abstract class Z3Module {
   public abstract get id(): string;

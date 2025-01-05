@@ -1,8 +1,8 @@
-import GridData from '../grid';
-import { RuleState, State } from '../primitives';
-import AreaNumberSymbol from '../symbols/areaNumberSymbol';
-import CustomTextSymbol from '../symbols/customTextSymbol';
-import Rule, { SearchVariant } from './rule';
+import GridData from '../grid.js';
+import { RuleState, State } from '../primitives.js';
+import AreaNumberSymbol from '../symbols/areaNumberSymbol.js';
+import CustomTextSymbol from '../symbols/customTextSymbol.js';
+import Rule, { SearchVariant } from './rule.js';
 
 export default class UndercluedRule extends Rule {
   private static readonly EXAMPLE_GRID = Object.freeze(

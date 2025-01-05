@@ -1,9 +1,9 @@
-import GridData from '../grid';
-import { Puzzle } from '../puzzle';
-import Rule from '../rules/rule';
-import Symbol from '../symbols/symbol';
-import SerializerV0 from './serializer_v0';
-import SerializerBase from './serializerBase';
+import GridData from '../grid.js';
+import { Puzzle } from '../puzzle.js';
+import Rule from '../rules/rule.js';
+import Symbol from '../symbols/symbol.js';
+import SerializerV0 from './serializer_v0.js';
+import SerializerBase from './serializerBase.js';
 
 const allSerializers = new Map<number, SerializerBase>();
 

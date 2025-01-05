@@ -1,5 +1,5 @@
-import Rule from './rule';
-import * as rules from './rules.gen';
+import Rule from './rule.js';
+import * as rules from './rules.gen.js';
 
 const allRules = new Map<string, Rule>();
 

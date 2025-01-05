@@ -1,5 +1,5 @@
-import { Position } from '../../../primitives';
-import BanPatternRule from '../../../rules/banPatternRule';
+import { Position } from '../../../primitives.js';
+import BanPatternRule from '../../../rules/banPatternRule.js';
 import BTModule, {
   BTColor,
   BTGridData,
@@ -7,7 +7,7 @@ import BTModule, {
   CheckResult,
   Rating,
   colorToBTTile,
-} from '../data';
+} from '../data.js';
 
 export default class BanPatternBTModule extends BTModule {
   public instr: BanPatternRule;

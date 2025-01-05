@@ -1,9 +1,9 @@
-import { AnyConfig, ConfigType } from '../config';
-import GridData from '../grid';
-import { minBy } from '../dataHelper';
-import { Color, RuleState, State } from '../primitives';
-import RegionShapeRule from './regionShapeRule';
-import { SearchVariant } from './rule';
+import { AnyConfig, ConfigType } from '../config.js';
+import GridData from '../grid.js';
+import { minBy } from '../dataHelper.js';
+import { Color, RuleState, State } from '../primitives.js';
+import RegionShapeRule from './regionShapeRule.js';
+import { SearchVariant } from './rule.js';
 
 export default class SameShapeRule extends RegionShapeRule {
   private static readonly CONFIGS: readonly AnyConfig[] = Object.freeze([

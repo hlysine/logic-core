@@ -1,5 +1,5 @@
-import Instruction from '../instruction';
-import Symbol from './symbol';
+import Instruction from '../instruction.js';
+import Symbol from './symbol.js';
 
 export default abstract class MultiEntrySymbol extends Symbol {
   /**

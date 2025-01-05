@@ -1,9 +1,8 @@
 #!/usr/bin/env bun
 
 import { $, ShellError } from 'bun';
-import dts from 'dts-bundle';
 
-const dataPath = 'src/data';
+const entryPath = 'src/index.ts';
 const generatedPath = 'assets/logic-core.global.d.ts';
 
 // remove old files
@@ -12,31 +11,16 @@ await $`rm -rf ./scripts/temp`.nothrow();
 await $`rm ${generatedPath}`.nothrow();
 
 try {
-  // compile the whole project
-  console.log('Generating types...');
-  await $`bunx --bun tsc -p tsconfig.json --declaration --emitDeclarationOnly --noEmit false --outDir ./scripts/temp`.throws(
-    true
-  );
-
   // bundle the data types into one file
   console.log('Bundling types...');
-  dts.bundle({
-    name: 'logic-pad',
-    main:
-      './scripts/temp/' + dataPath.split('/').slice(1).join('/') + '/**/*.d.ts',
-    outputAsModuleFolder: true,
-    out: '../'.repeat((dataPath.match(/\//g) ?? []).length + 2) + generatedPath,
-  });
+  await $`bunx --bun dts-bundle-generator -o ${generatedPath} ${entryPath} --no-check`.throws(
+    true
+  );
 
   // wrap the bundled types in a global declaration
   let file = await Bun.file(generatedPath).text();
 
-  file = file
-    .replace(/export default +(?=class|abstract|function)/gm, 'export ')
-    .replace(/export default +(?!class|abstract|function)/gm, 'export const ')
-    .replace(/export const instance.+;/gm, '');
-  if (!file.startsWith('declare global'))
-    file = `
+  file = `
       /* prettier-ignore-start */
 
       /* eslint-disable */
@@ -46,7 +30,7 @@ try {
       // noinspection JSUnusedGlobalSymbols
       declare global {
         ${file}
-        export { Symbol as _Symbol };
+        export { Symbol$1 as _Symbol };
       }
       export {};
 

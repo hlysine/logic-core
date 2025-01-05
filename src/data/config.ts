@@ -1,4 +1,4 @@
-import GridData from './grid';
+import GridData from './grid.js';
 import {
   Color,
   Comparison,
@@ -8,8 +8,8 @@ import {
   ORIENTATIONS,
   Orientation,
   OrientationToggle,
-} from './primitives';
-import { ControlLine } from './rules/musicControlLine';
+} from './primitives.js';
+import { ControlLine } from './rules/musicControlLine.js';
 
 export enum ConfigType {
   Boolean = 'boolean',

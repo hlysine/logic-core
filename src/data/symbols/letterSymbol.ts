@@ -1,8 +1,8 @@
-import { AnyConfig, ConfigType } from '../config';
-import GridData from '../grid';
-import { array } from '../dataHelper';
-import { Color, State } from '../primitives';
-import Symbol from './symbol';
+import { AnyConfig, ConfigType } from '../config.js';
+import GridData from '../grid.js';
+import { array } from '../dataHelper.js';
+import { Color, State } from '../primitives.js';
+import Symbol from './symbol.js';
 
 export default class LetterSymbol extends Symbol {
   private static readonly CONFIGS: readonly AnyConfig[] = Object.freeze([

@@ -1,11 +1,11 @@
 import { Solver, Optimize } from 'z3-solver';
-import GridData from '../../../grid';
-import Z3SolverContext from '../z3SolverContext';
-import Z3Module from './z3Module';
+import GridData from '../../../grid.js';
+import Z3SolverContext from '../z3SolverContext.js';
+import Z3Module from './z3Module.js';
 import RegionAreaRule, {
   instance as regionAreaInstance,
-} from '../../../rules/regionAreaRule';
-import { Color } from '../../../primitives';
+} from '../../../rules/regionAreaRule.js';
+import { Color } from '../../../primitives.js';
 
 export default class RegionAreaModule extends Z3Module {
   public readonly id = regionAreaInstance.id;

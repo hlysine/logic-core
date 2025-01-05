@@ -1,4 +1,4 @@
-import StreamCompressor from './streamCompressor';
+import StreamCompressor from './streamCompressor.js';
 
 export default class DeflateCompressor extends StreamCompressor {
   public get id(): string {

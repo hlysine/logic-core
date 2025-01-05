@@ -1,4 +1,4 @@
-import { Color } from './primitives';
+import { Color } from './primitives.js';
 
 export default class TileData {
   public constructor(

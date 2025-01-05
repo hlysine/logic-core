@@ -1,4 +1,4 @@
-import { AnyConfig, configEquals } from './config';
+import { AnyConfig, configEquals } from './config.js';
 
 export default abstract class Configurable {
   public get configs(): readonly AnyConfig[] | null {

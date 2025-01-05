@@ -1,6 +1,6 @@
-import GridData from '../grid';
-import { RuleState, State } from '../primitives';
-import Rule, { SearchVariant } from './rule';
+import GridData from '../grid.js';
+import { RuleState, State } from '../primitives.js';
+import Rule, { SearchVariant } from './rule.js';
 
 export default class CompletePatternRule extends Rule {
   private static readonly EXAMPLE_GRID = Object.freeze(

@@ -1,7 +1,7 @@
-import GridData from '../../grid';
-import { Color, State } from '../../primitives';
-import { Serializer } from '../../serializer/allSerializers';
-import validateGrid from '../../validate';
+import GridData from '../../grid.js';
+import { Color, State } from '../../primitives.js';
+import { Serializer } from '../../serializer/allSerializers.js';
+import validateGrid from '../../validate.js';
 
 function posToCoords(pos: number | undefined, width: number): [number, number] {
   if (pos === undefined) {

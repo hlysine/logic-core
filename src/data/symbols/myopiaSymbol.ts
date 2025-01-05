@@ -1,5 +1,5 @@
-import { AnyConfig, ConfigType } from '../config';
-import GridData from '../grid';
+import { AnyConfig, ConfigType } from '../config.js';
+import GridData from '../grid.js';
 import {
   Color,
   ORIENTATIONS,
@@ -8,8 +8,8 @@ import {
   OrientationToggle,
   State,
   orientationToggle,
-} from '../primitives';
-import MultiEntrySymbol from './multiEntrySymbol';
+} from '../primitives.js';
+import MultiEntrySymbol from './multiEntrySymbol.js';
 
 export default class MyopiaSymbol extends MultiEntrySymbol {
   private static readonly CONFIGS: readonly AnyConfig[] = Object.freeze([

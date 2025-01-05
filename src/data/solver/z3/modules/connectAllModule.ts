@@ -1,10 +1,10 @@
 import { Solver, Optimize, Arith } from 'z3-solver';
-import GridData from '../../../grid';
-import Z3SolverContext from '../z3SolverContext';
-import Z3Module from './z3Module';
+import GridData from '../../../grid.js';
+import Z3SolverContext from '../z3SolverContext.js';
+import Z3Module from './z3Module.js';
 import ConnectAllRule, {
   instance as connectAllInstance,
-} from '../../../rules/connectAllRule';
+} from '../../../rules/connectAllRule.js';
 
 export default class ConnectAllModule extends Z3Module {
   public readonly id = connectAllInstance.id;

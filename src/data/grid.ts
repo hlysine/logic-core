@@ -1,12 +1,12 @@
-import { handlesGridChange } from './events/onGridChange';
-import { handlesGridResize } from './events/onGridResize';
-import { handlesSetGrid } from './events/onSetGrid';
-import GridConnections from './gridConnections';
-import { array, move } from './dataHelper';
-import { Color, Direction, Orientation, Position } from './primitives';
-import Rule from './rules/rule';
-import Symbol from './symbols/symbol';
-import TileData from './tile';
+import { handlesGridChange } from './events/onGridChange.js';
+import { handlesGridResize } from './events/onGridResize.js';
+import { handlesSetGrid } from './events/onSetGrid.js';
+import GridConnections from './gridConnections.js';
+import { array, move } from './dataHelper.js';
+import { Color, Direction, Orientation, Position } from './primitives.js';
+import Rule from './rules/rule.js';
+import Symbol from './symbols/symbol.js';
+import TileData from './tile.js';
 
 const NEIGHBOR_OFFSETS: Position[] = [
   { x: -1, y: 0 },

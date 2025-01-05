@@ -1,7 +1,7 @@
-import { Orientation, Position } from '../../../primitives';
-import LotusSymbol from '../../../symbols/lotusSymbol';
-import { BTGridData } from '../data';
-import DirectionLinkerBTModule from './directionLinker';
+import { Orientation, Position } from '../../../primitives.js';
+import LotusSymbol from '../../../symbols/lotusSymbol.js';
+import { BTGridData } from '../data.js';
+import DirectionLinkerBTModule from './directionLinker.js';
 
 export default class LotusBTModule extends DirectionLinkerBTModule {
   public instr: LotusSymbol;

@@ -1,11 +1,11 @@
-import { AnyConfig, ConfigType } from '../config';
-import { SymbolValidationHandler } from '../events/onSymbolValidation';
-import GridData from '../grid';
-import { RuleState, State } from '../primitives';
-import AreaNumberSymbol from '../symbols/areaNumberSymbol';
-import NumberSymbol from '../symbols/numberSymbol';
-import Symbol from '../symbols/symbol';
-import Rule, { SearchVariant } from './rule';
+import { AnyConfig, ConfigType } from '../config.js';
+import { SymbolValidationHandler } from '../events/onSymbolValidation.js';
+import GridData from '../grid.js';
+import { RuleState, State } from '../primitives.js';
+import AreaNumberSymbol from '../symbols/areaNumberSymbol.js';
+import NumberSymbol from '../symbols/numberSymbol.js';
+import Symbol from '../symbols/symbol.js';
+import Rule, { SearchVariant } from './rule.js';
 
 export default class OffByXRule
   extends Rule

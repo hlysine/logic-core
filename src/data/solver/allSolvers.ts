@@ -1,7 +1,7 @@
-import Solver from './solver';
-import UndercluedSolver from './underclued/undercluedSolver';
-import BacktrackSolver from './backtrack/backtrackSolver';
-import Z3Solver from './z3/z3Solver';
+import Solver from './solver.js';
+import UndercluedSolver from './underclued/undercluedSolver.js';
+import BacktrackSolver from './backtrack/backtrackSolver.js';
+import Z3Solver from './z3/z3Solver.js';
 
 const allSolvers = new Map<string, Solver>();
 

@@ -1,9 +1,9 @@
-import { AnyConfig, ConfigType } from '../config';
-import GridData from '../grid';
-import { array } from '../dataHelper';
-import { Color, Position, RuleState, State } from '../primitives';
-import TileData from '../tile';
-import Rule, { SearchVariant } from './rule';
+import { AnyConfig, ConfigType } from '../config.js';
+import GridData from '../grid.js';
+import { array } from '../dataHelper.js';
+import { Color, Position, RuleState, State } from '../primitives.js';
+import TileData from '../tile.js';
+import Rule, { SearchVariant } from './rule.js';
 
 export default class RegionAreaRule extends Rule {
   private static readonly CONFIGS: readonly AnyConfig[] = Object.freeze([

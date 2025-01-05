@@ -1,14 +1,14 @@
 import { Solver, Optimize, Arith } from 'z3-solver';
-import GridData from '../../../grid';
-import Z3SolverContext from '../z3SolverContext';
-import Z3Module from './z3Module';
+import GridData from '../../../grid.js';
+import Z3SolverContext from '../z3SolverContext.js';
+import Z3Module from './z3Module.js';
 import MyopiaSymbol, {
   instance as myopiaInstance,
-} from '../../../symbols/myopiaSymbol';
+} from '../../../symbols/myopiaSymbol.js';
 import { Point, reduceCells } from 'grilops';
-import { DIRECTIONS, ORIENTATIONS } from '../../../primitives';
-import { convertDirection } from '../utils';
-import { move } from '../../../dataHelper';
+import { DIRECTIONS, ORIENTATIONS } from '../../../primitives.js';
+import { convertDirection } from '../utils.js';
+import { move } from '../../../dataHelper.js';
 
 export default class MyopiaModule extends Z3Module {
   public readonly id = myopiaInstance.id;

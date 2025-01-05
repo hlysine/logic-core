@@ -1,9 +1,6 @@
-import { AnyConfig, ConfigType } from '../config';
-import GridData from '../grid';
-import CustomSymbol from './customSymbol';
-import type Md from 'react-icons/md';
-
-export type IconString = keyof typeof Md;
+import { AnyConfig, ConfigType } from '../config.js';
+import GridData from '../grid.js';
+import CustomSymbol from './customSymbol.js';
 
 export default class CustomIconSymbol extends CustomSymbol {
   private static readonly EXAMPLE_GRID = Object.freeze(new GridData(5, 4));
@@ -69,7 +66,7 @@ export default class CustomIconSymbol extends CustomSymbol {
     grid: GridData,
     x: number,
     y: number,
-    public readonly icon: IconString,
+    public readonly icon: string,
     public readonly rotation = 0
   ) {
     super(description, grid, x, y);
@@ -97,7 +94,7 @@ export default class CustomIconSymbol extends CustomSymbol {
     grid?: GridData;
     x?: number;
     y?: number;
-    icon?: IconString;
+    icon?: string;
     rotation?: number;
   }): this {
     return new CustomIconSymbol(
@@ -110,7 +107,7 @@ export default class CustomIconSymbol extends CustomSymbol {
     ) as this;
   }
 
-  public withIcon(icon: IconString): this {
+  public withIcon(icon: string): this {
     return this.copyWith({ icon });
   }
 

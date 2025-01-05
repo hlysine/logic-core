@@ -1,5 +1,5 @@
-import { Position } from '../../../primitives';
-import AreaNumberSymbol from '../../../symbols/areaNumberSymbol';
+import { Position } from '../../../primitives.js';
+import AreaNumberSymbol from '../../../symbols/areaNumberSymbol.js';
 import BTModule, {
   BTGridData,
   BTTile,
@@ -7,7 +7,7 @@ import BTModule, {
   IntArray2D,
   Rating,
   createOneTileResult,
-} from '../data';
+} from '../data.js';
 
 export default class AreaNumberBTModule extends BTModule {
   public instr: AreaNumberSymbol;

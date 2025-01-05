@@ -1,8 +1,8 @@
-import GridData from '../grid';
-import { State } from '../primitives';
-import Rule from '../rules/rule';
-import Symbol from '../symbols/symbol';
-import { isEventHandler } from './eventHelper';
+import GridData from '../grid.js';
+import { State } from '../primitives.js';
+import Rule from '../rules/rule.js';
+import Symbol from '../symbols/symbol.js';
+import { isEventHandler } from './eventHelper.js';
 
 export interface SymbolValidationHandler {
   /**

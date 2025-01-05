@@ -1,6 +1,6 @@
-import GridData from '../grid';
-import { allRules } from '../rules';
-import { allSymbols } from '../symbols';
+import GridData from '../grid.js';
+import { allRules } from '../rules/index.js';
+import { allSymbols } from '../symbols/index.js';
 
 /**
  * Base class that all solvers must extend.

@@ -1,6 +1,11 @@
-import { Position } from '../../../primitives';
-import LetterSymbol from '../../../symbols/letterSymbol';
-import BTModule, { BTGridData, BTTile, CheckResult, IntArray2D } from '../data';
+import { Position } from '../../../primitives.js';
+import LetterSymbol from '../../../symbols/letterSymbol.js';
+import BTModule, {
+  BTGridData,
+  BTTile,
+  CheckResult,
+  IntArray2D,
+} from '../data.js';
 
 export default class LetterBTModule extends BTModule {
   private letters: LetterSymbol[][];

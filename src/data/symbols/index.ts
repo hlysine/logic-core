@@ -1,5 +1,5 @@
-import Symbol from './symbol';
-import * as symbols from './symbols.gen';
+import Symbol from './symbol.js';
+import * as symbols from './symbols.gen.js';
 
 const allSymbols = new Map<string, Symbol>();
 

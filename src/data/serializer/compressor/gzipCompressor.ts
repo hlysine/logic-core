@@ -1,4 +1,4 @@
-import StreamCompressor from './streamCompressor';
+import StreamCompressor from './streamCompressor.js';
 
 export default class GzipCompressor extends StreamCompressor {
   public get id(): string {

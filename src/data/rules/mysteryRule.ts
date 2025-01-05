@@ -1,12 +1,12 @@
-import { AnyConfig, ConfigType } from '../config';
-import { FinalValidationHandler } from '../events/onFinalValidation';
-import { GridChangeHandler } from '../events/onGridChange';
-import { GridResizeHandler } from '../events/onGridResize';
-import GridData from '../grid';
-import { array } from '../dataHelper';
-import { Color, GridState, RuleState, State } from '../primitives';
-import CustomTextSymbol from '../symbols/customTextSymbol';
-import Rule, { SearchVariant } from './rule';
+import { AnyConfig, ConfigType } from '../config.js';
+import { FinalValidationHandler } from '../events/onFinalValidation.js';
+import { GridChangeHandler } from '../events/onGridChange.js';
+import { GridResizeHandler } from '../events/onGridResize.js';
+import GridData from '../grid.js';
+import { array } from '../dataHelper.js';
+import { Color, GridState, RuleState, State } from '../primitives.js';
+import CustomTextSymbol from '../symbols/customTextSymbol.js';
+import Rule, { SearchVariant } from './rule.js';
 
 export default class MysteryRule
   extends Rule

@@ -1,68 +1,70 @@
-import GridData from '../../grid';
-import { array } from '../../dataHelper';
-import { Color, Position } from '../../primitives';
+import GridData from '../../grid.js';
+import { array } from '../../dataHelper.js';
+import { Color, Position } from '../../primitives.js';
 import BanPatternRule, {
   instance as banPatternInstance,
-} from '../../rules/banPatternRule';
+} from '../../rules/banPatternRule.js';
 import CellCountRule, {
   instance as cellCountInstance,
-} from '../../rules/cellCountRule';
-import ConnectAllRule from '../../rules/connectAllRule';
+} from '../../rules/cellCountRule.js';
+import ConnectAllRule from '../../rules/connectAllRule.js';
 import RegionAreaRule, {
   instance as regionAreaInstance,
-} from '../../rules/regionAreaRule';
+} from '../../rules/regionAreaRule.js';
 import SameShapeRule, {
   instance as sameShapeInstance,
-} from '../../rules/sameShapeRule';
+} from '../../rules/sameShapeRule.js';
 import SymbolsPerRegionRule, {
   instance as symbolsPerRegionInstance,
-} from '../../rules/symbolsPerRegionRule';
-import { instance as undercluedInstance } from '../../rules/undercluedRule';
+} from '../../rules/symbolsPerRegionRule.js';
+import { instance as undercluedInstance } from '../../rules/undercluedRule.js';
 import UniqueShapeRule, {
   instance as uniqueShapeInstance,
-} from '../../rules/uniqueShapeRule';
-import { Serializer } from '../../serializer/allSerializers';
+} from '../../rules/uniqueShapeRule.js';
+import { Serializer } from '../../serializer/allSerializers.js';
 import AreaNumberSymbol, {
   instance as areaNumberInstance,
-} from '../../symbols/areaNumberSymbol';
-import DartSymbol, { instance as dartInstance } from '../../symbols/dartSymbol';
+} from '../../symbols/areaNumberSymbol.js';
+import DartSymbol, {
+  instance as dartInstance,
+} from '../../symbols/dartSymbol.js';
 import GalaxySymbol, {
   instance as galaxyInstance,
-} from '../../symbols/galaxySymbol';
+} from '../../symbols/galaxySymbol.js';
 import LetterSymbol, {
   instance as letterInstance,
-} from '../../symbols/letterSymbol';
+} from '../../symbols/letterSymbol.js';
 import LotusSymbol, {
   instance as lotusInstance,
-} from '../../symbols/lotusSymbol';
+} from '../../symbols/lotusSymbol.js';
 import MinesweeperSymbol, {
   instance as minesweeperInstance,
-} from '../../symbols/minesweeperSymbol';
+} from '../../symbols/minesweeperSymbol.js';
 import MyopiaSymbol, {
   instance as myopiaInstance,
-} from '../../symbols/myopiaSymbol';
-import Symbol from '../../symbols/symbol';
+} from '../../symbols/myopiaSymbol.js';
+import Symbol from '../../symbols/symbol.js';
 import ViewpointSymbol, {
   instance as viewpointInstance,
-} from '../../symbols/viewpointSymbol';
-import TileData from '../../tile';
-import { instance as connectAllInstance } from '../z3/modules/connectAllModule';
-import BTModule, { BTGridData, BTTile, IntArray2D, Rating } from './data';
-import BanPatternBTModule from './rules/banPattern';
-import CellCountBTModule from './rules/cellCount';
-import ConnectAllBTModule from './rules/connectAll';
-import RegionAreaBTModule from './rules/regionArea';
-import SameShapeBTModule from './rules/sameShape';
-import SymbolsPerRegionBTModule from './rules/symbolsPerRegion';
-import UniqueShapeBTModule from './rules/uniqueShape';
-import AreaNumberBTModule from './symbols/areaNumber';
-import DartBTModule from './symbols/dart';
-import GalaxyBTModule from './symbols/galaxy';
-import LetterBTModule from './symbols/letter';
-import LotusBTModule from './symbols/lotus';
-import MinesweeperBTModule from './symbols/minesweeper';
-import MyopiaBTModule from './symbols/myopia';
-import ViewpointBTModule from './symbols/viewpoint';
+} from '../../symbols/viewpointSymbol.js';
+import TileData from '../../tile.js';
+import { instance as connectAllInstance } from '../z3/modules/connectAllModule.js';
+import BTModule, { BTGridData, BTTile, IntArray2D, Rating } from './data.js';
+import BanPatternBTModule from './rules/banPattern.js';
+import CellCountBTModule from './rules/cellCount.js';
+import ConnectAllBTModule from './rules/connectAll.js';
+import RegionAreaBTModule from './rules/regionArea.js';
+import SameShapeBTModule from './rules/sameShape.js';
+import SymbolsPerRegionBTModule from './rules/symbolsPerRegion.js';
+import UniqueShapeBTModule from './rules/uniqueShape.js';
+import AreaNumberBTModule from './symbols/areaNumber.js';
+import DartBTModule from './symbols/dart.js';
+import GalaxyBTModule from './symbols/galaxy.js';
+import LetterBTModule from './symbols/letter.js';
+import LotusBTModule from './symbols/lotus.js';
+import MinesweeperBTModule from './symbols/minesweeper.js';
+import MyopiaBTModule from './symbols/myopia.js';
+import ViewpointBTModule from './symbols/viewpoint.js';
 
 function translateToBTGridData(grid: GridData): BTGridData {
   const tiles: BTTile[][] = array(grid.width, grid.height, (x, y) => {

@@ -1,4 +1,4 @@
-import { Direction, Orientation, Position } from './primitives';
+import { Direction, Orientation, Position } from './primitives.js';
 
 /**
  * Offset the given position by a given step in the given direction.

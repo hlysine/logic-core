@@ -1,7 +1,7 @@
-import { minBy } from '../../dataHelper';
-import CompressorBase from './compressorBase';
-import GzipCompressor from './gzipCompressor';
-import DeflateCompressor from './deflateCompressor';
+import { minBy } from '../../dataHelper.js';
+import CompressorBase from './compressorBase.js';
+import GzipCompressor from './gzipCompressor.js';
+import DeflateCompressor from './deflateCompressor.js';
 
 const allCompressors = new Map<string, CompressorBase>();
 

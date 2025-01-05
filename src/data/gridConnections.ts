@@ -1,5 +1,5 @@
-import { Edge, Position } from './primitives';
-import TileConnections from './tileConnections';
+import { Edge, Position } from './primitives.js';
+import TileConnections from './tileConnections.js';
 
 function isSameEdge(a: Edge, b: Edge): boolean {
   return (

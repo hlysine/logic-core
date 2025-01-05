@@ -1,6 +1,6 @@
-import UniqueShapeRule from '../../../rules/uniqueShapeRule';
-import { BTGridData, CheckResult } from '../data';
-import RegionShapeBTModule from './regionShape';
+import UniqueShapeRule from '../../../rules/uniqueShapeRule.js';
+import { BTGridData, CheckResult } from '../data.js';
+import RegionShapeBTModule from './regionShape.js';
 
 export default class UniqueShapeBTModule extends RegionShapeBTModule {
   public instr: UniqueShapeRule;

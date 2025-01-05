@@ -1,8 +1,8 @@
-import { AnyConfig, ConfigType } from '../config';
-import GridData from '../grid';
-import { Color, RuleState, State } from '../primitives';
-import AreaNumberSymbol from '../symbols/areaNumberSymbol';
-import Rule, { SearchVariant } from './rule';
+import { AnyConfig, ConfigType } from '../config.js';
+import GridData from '../grid.js';
+import { Color, RuleState, State } from '../primitives.js';
+import AreaNumberSymbol from '../symbols/areaNumberSymbol.js';
+import Rule, { SearchVariant } from './rule.js';
 
 export default class CellCountRule extends Rule {
   private static readonly CONFIGS: readonly AnyConfig[] = Object.freeze([

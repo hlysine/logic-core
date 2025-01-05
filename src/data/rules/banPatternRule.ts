@@ -1,9 +1,9 @@
-import { AnyConfig, ConfigType } from '../config';
-import GridData from '../grid';
-import { array } from '../dataHelper';
-import { Color, RuleState, State } from '../primitives';
-import { Shape, getShapeVariants, tilesToShape } from '../shapes';
-import Rule, { SearchVariant } from './rule';
+import { AnyConfig, ConfigType } from '../config.js';
+import GridData from '../grid.js';
+import { array } from '../dataHelper.js';
+import { Color, RuleState, State } from '../primitives.js';
+import { Shape, getShapeVariants, tilesToShape } from '../shapes.js';
+import Rule, { SearchVariant } from './rule.js';
 
 export default class BanPatternRule extends Rule {
   private static readonly EXAMPLE_GRID = Object.freeze(

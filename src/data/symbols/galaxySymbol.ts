@@ -1,7 +1,7 @@
-import { AnyConfig, ConfigType } from '../config';
-import GridData from '../grid';
-import { Direction, State } from '../primitives';
-import DirectionLinkerSymbol from './directionLinkerSymbol';
+import { AnyConfig, ConfigType } from '../config.js';
+import GridData from '../grid.js';
+import { Direction, State } from '../primitives.js';
+import DirectionLinkerSymbol from './directionLinkerSymbol.js';
 
 export default class GalaxySymbol extends DirectionLinkerSymbol {
   private static readonly linkedDirections = {

@@ -1,13 +1,13 @@
-import GridData from '../grid';
-import { array } from '../dataHelper';
-import { Color, Position } from '../primitives';
+import GridData from '../grid.js';
+import { array } from '../dataHelper.js';
+import { Color, Position } from '../primitives.js';
 import {
   Shape,
   normalizeShape,
   positionsToShape,
   shapeEquals,
-} from '../shapes';
-import Rule from './rule';
+} from '../shapes.js';
+import Rule from './rule.js';
 
 export type ShapeRegions = {
   regions: {

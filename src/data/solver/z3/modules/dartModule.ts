@@ -1,14 +1,14 @@
 import { Solver, Optimize, Arith } from 'z3-solver';
-import GridData from '../../../grid';
-import Z3SolverContext from '../z3SolverContext';
-import Z3Module from './z3Module';
+import GridData from '../../../grid.js';
+import Z3SolverContext from '../z3SolverContext.js';
+import Z3Module from './z3Module.js';
 import DartSymbol, {
   instance as dartInstance,
-} from '../../../symbols/dartSymbol';
+} from '../../../symbols/dartSymbol.js';
 import { Point, reduceCells } from 'grilops';
-import { Color } from '../../../primitives';
-import { move } from '../../../dataHelper';
-import { convertDirection } from '../utils';
+import { Color } from '../../../primitives.js';
+import { move } from '../../../dataHelper.js';
+import { convertDirection } from '../utils.js';
 
 export default class DartModule extends Z3Module {
   public readonly id = dartInstance.id;

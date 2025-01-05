@@ -1,5 +1,5 @@
-import { Position } from '../../../primitives';
-import DirectionLinkerSymbol from '../../../symbols/directionLinkerSymbol';
+import { Position } from '../../../primitives.js';
+import DirectionLinkerSymbol from '../../../symbols/directionLinkerSymbol.js';
 import BTModule, {
   BTGridData,
   BTTile,
@@ -7,7 +7,7 @@ import BTModule, {
   IntArray2D,
   Rating,
   createOneTileResult,
-} from '../data';
+} from '../data.js';
 
 export default abstract class DirectionLinkerBTModule extends BTModule {
   public instr: DirectionLinkerSymbol;

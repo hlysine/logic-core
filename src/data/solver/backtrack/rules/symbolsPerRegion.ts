@@ -1,13 +1,13 @@
-import { Comparison, Position } from '../../../primitives';
-import SymbolsPerRegionRule from '../../../rules/symbolsPerRegionRule';
-import Symbol from '../../../symbols/symbol';
+import { Comparison, Position } from '../../../primitives.js';
+import SymbolsPerRegionRule from '../../../rules/symbolsPerRegionRule.js';
+import Symbol from '../../../symbols/symbol.js';
 import BTModule, {
   BTGridData,
   BTTile,
   CheckResult,
   IntArray2D,
   colorToBTTile,
-} from '../data';
+} from '../data.js';
 
 export default class SymbolsPerRegionBTModule extends BTModule {
   public instr: SymbolsPerRegionRule;

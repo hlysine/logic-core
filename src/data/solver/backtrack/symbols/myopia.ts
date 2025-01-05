@@ -1,6 +1,6 @@
-import { move } from '../../../dataHelper';
-import { ORIENTATIONS, Orientation } from '../../../primitives';
-import MyopiaSymbol from '../../../symbols/myopiaSymbol';
+import { move } from '../../../dataHelper.js';
+import { ORIENTATIONS, Orientation } from '../../../primitives.js';
+import MyopiaSymbol from '../../../symbols/myopiaSymbol.js';
 import BTModule, {
   BTColor,
   BTGridData,
@@ -8,7 +8,7 @@ import BTModule, {
   CheckResult,
   createOneTileResult,
   getOppositeColor,
-} from '../data';
+} from '../data.js';
 
 export default class MyopiaBTModule extends BTModule {
   public instr: MyopiaSymbol;

@@ -1,7 +1,7 @@
-import { AnyConfig, ConfigType } from '../config';
-import GridData from '../grid';
-import { Color } from '../primitives';
-import NumberSymbol from './numberSymbol';
+import { AnyConfig, ConfigType } from '../config.js';
+import GridData from '../grid.js';
+import { Color } from '../primitives.js';
+import NumberSymbol from './numberSymbol.js';
 
 export default class MinesweeperSymbol extends NumberSymbol {
   private static readonly CONFIGS: readonly AnyConfig[] = Object.freeze([

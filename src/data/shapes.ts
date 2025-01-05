@@ -1,5 +1,5 @@
-import { Color, Position } from './primitives';
-import TileData from './tile';
+import { Color, Position } from './primitives.js';
+import TileData from './tile.js';
 
 export interface ShapeElement {
   x: number;

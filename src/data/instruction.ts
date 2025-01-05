@@ -1,5 +1,5 @@
-import Configurable from './configurable';
-import GridData from './grid';
+import Configurable from './configurable.js';
+import GridData from './grid.js';
 
 export default abstract class Instruction extends Configurable {
   public abstract get id(): string;

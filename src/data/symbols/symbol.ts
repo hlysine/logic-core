@@ -1,7 +1,7 @@
-import { GridResizeHandler } from '../events/onGridResize';
-import GridData from '../grid';
-import Instruction from '../instruction';
-import { State } from '../primitives';
+import { GridResizeHandler } from '../events/onGridResize.js';
+import GridData from '../grid.js';
+import Instruction from '../instruction.js';
+import { State } from '../primitives.js';
 
 export default abstract class Symbol
   extends Instruction

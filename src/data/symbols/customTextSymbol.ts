@@ -1,6 +1,6 @@
-import { AnyConfig, ConfigType } from '../config';
-import GridData from '../grid';
-import CustomSymbol from './customSymbol';
+import { AnyConfig, ConfigType } from '../config.js';
+import GridData from '../grid.js';
+import CustomSymbol from './customSymbol.js';
 
 export default class CustomTextSymbol extends CustomSymbol {
   private static readonly EXAMPLE_GRID = Object.freeze(new GridData(5, 4));

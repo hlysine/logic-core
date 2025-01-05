@@ -1,9 +1,9 @@
-import CompressorBase from './compressorBase';
+import CompressorBase from './compressorBase.js';
 
 function ensureCompressionStream() {
   if (!globalThis.CompressionStream || !globalThis.DecompressionStream) {
     console.log('CompressionStream not supported. Loading polyfill.');
-    return import('../../../polyfill/streamPolyfill');
+    return import('../../../polyfill/streamPolyfill.js');
   }
   return Promise.resolve();
 }

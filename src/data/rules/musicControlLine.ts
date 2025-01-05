@@ -1,5 +1,5 @@
-import { AnyConfig, ConfigType } from '../config';
-import Configurable from '../configurable';
+import { AnyConfig, ConfigType } from '../config.js';
+import Configurable from '../configurable.js';
 
 export class Row extends Configurable {
   private static readonly CONFIGS: readonly AnyConfig[] = Object.freeze([

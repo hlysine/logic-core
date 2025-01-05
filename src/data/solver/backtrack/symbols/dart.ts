@@ -1,5 +1,5 @@
-import { move } from '../../../dataHelper';
-import DartSymbol from '../../../symbols/dartSymbol';
+import { move } from '../../../dataHelper.js';
+import DartSymbol from '../../../symbols/dartSymbol.js';
 import BTModule, {
   BTColor,
   BTGridData,
@@ -8,7 +8,7 @@ import BTModule, {
   IntArray2D,
   createOneTileResult,
   getOppositeColor,
-} from '../data';
+} from '../data.js';
 
 export default class DartBTModule extends BTModule {
   public instr: DartSymbol;

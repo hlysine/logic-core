@@ -6,13 +6,13 @@ import {
   SymbolSet,
   getRectangleLattice,
 } from 'grilops';
-import GridData from '../../grid';
-import Solver from '../solver';
-import { allZ3Modules } from './modules';
-import { Color } from '../../primitives';
+import GridData from '../../grid.js';
+import Solver from '../solver.js';
+import { allZ3Modules } from './modules/index.js';
+import { Color } from '../../primitives.js';
 import { Model, init } from 'z3-solver';
-import Z3SolverContext from './z3SolverContext';
-import { array } from '../../dataHelper';
+import Z3SolverContext from './z3SolverContext.js';
+import { array } from '../../dataHelper.js';
 
 export default class Z3Solver extends Solver {
   public readonly id = 'z3';

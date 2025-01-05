@@ -1,6 +1,6 @@
-import GridData from '../grid';
-import { State } from '../primitives';
-import Symbol from './symbol';
+import GridData from '../grid.js';
+import { State } from '../primitives.js';
+import Symbol from './symbol.js';
 
 /**
  * All symbols which contain a number should extend this class to be compatible with off by X rules.

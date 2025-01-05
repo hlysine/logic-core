@@ -1,7 +1,7 @@
-import { AnyConfig, ConfigType } from '../config';
-import GridData from '../grid';
-import { Color, Direction, Position, State } from '../primitives';
-import Symbol from './symbol';
+import { AnyConfig, ConfigType } from '../config.js';
+import GridData from '../grid.js';
+import { Color, Direction, Position, State } from '../primitives.js';
+import Symbol from './symbol.js';
 
 export type DirectionLinkerMap = {
   [key in Direction]: Direction;

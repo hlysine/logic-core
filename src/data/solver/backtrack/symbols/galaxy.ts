@@ -1,7 +1,7 @@
-import { Position } from '../../../primitives';
-import GalaxySymbol from '../../../symbols/galaxySymbol';
-import { BTGridData } from '../data';
-import DirectionLinkerBTModule from './directionLinker';
+import { Position } from '../../../primitives.js';
+import GalaxySymbol from '../../../symbols/galaxySymbol.js';
+import { BTGridData } from '../data.js';
+import DirectionLinkerBTModule from './directionLinker.js';
 
 export default class GalaxyBTModule extends DirectionLinkerBTModule {
   public instr: GalaxySymbol;

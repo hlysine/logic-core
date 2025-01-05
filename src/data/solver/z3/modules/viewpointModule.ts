@@ -1,14 +1,14 @@
 import { Solver, Optimize, Arith } from 'z3-solver';
-import GridData from '../../../grid';
-import Z3SolverContext from '../z3SolverContext';
-import Z3Module from './z3Module';
+import GridData from '../../../grid.js';
+import Z3SolverContext from '../z3SolverContext.js';
+import Z3Module from './z3Module.js';
 import ViewpointSymbol, {
   instance as viewpointInstance,
-} from '../../../symbols/viewpointSymbol';
+} from '../../../symbols/viewpointSymbol.js';
 import { Point, reduceCells } from 'grilops';
-import { DIRECTIONS } from '../../../primitives';
-import { move } from '../../../dataHelper';
-import { convertDirection } from '../utils';
+import { DIRECTIONS } from '../../../primitives.js';
+import { move } from '../../../dataHelper.js';
+import { convertDirection } from '../utils.js';
 
 export default class ViewpointModule extends Z3Module {
   public readonly id = viewpointInstance.id;

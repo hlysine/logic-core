@@ -1,4 +1,4 @@
-import ViewpointSymbol from '../../../symbols/viewpointSymbol';
+import ViewpointSymbol from '../../../symbols/viewpointSymbol.js';
 import BTModule, {
   BTColor,
   BTGridData,
@@ -8,7 +8,7 @@ import BTModule, {
   Rating,
   createOneTileResult,
   getOppositeColor,
-} from '../data';
+} from '../data.js';
 
 export default class ViewpointBTModule extends BTModule {
   public instr: ViewpointSymbol;

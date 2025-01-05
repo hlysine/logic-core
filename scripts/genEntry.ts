@@ -1,6 +1,6 @@
 import path from 'path';
 import fg from 'fast-glob';
-import { extractName, stripExtension } from './scriptHelper';
+import { extractName, stripExtension } from './scriptHelper.js';
 
 export interface Config {
   dataPath: string;
@@ -41,7 +41,8 @@ async function generateEntry(config: Config) {
             relative.length === 0 ? '.' : relative,
             file.replaceAll('.ts', '').replaceAll('\\', '/')
           )
-          .replaceAll('\\', '/'),
+          .replaceAll('\\', '/') +
+        '.js',
       module,
       defaultExport: undefined,
       namedExports: [],
@@ -75,8 +76,6 @@ async function generateEntry(config: Config) {
   const source = `/* prettier-ignore-start */
 
 /* eslint-disable */
-
-// @ts-nocheck
 
 // noinspection JSUnusedGlobalSymbols
 

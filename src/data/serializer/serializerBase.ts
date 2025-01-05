@@ -1,9 +1,9 @@
-import GridData from '../grid';
-import GridConnections from '../gridConnections';
-import Rule from '../rules/rule';
-import TileData from '../tile';
-import Symbol from '../symbols/symbol';
-import { Puzzle } from '../puzzle';
+import GridData from '../grid.js';
+import GridConnections from '../gridConnections.js';
+import Rule from '../rules/rule.js';
+import TileData from '../tile.js';
+import Symbol from '../symbols/symbol.js';
+import { Puzzle } from '../puzzle.js';
 
 export default abstract class SerializerBase {
   public abstract get version(): number;

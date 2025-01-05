@@ -1,12 +1,12 @@
-import { Position } from '../../../primitives';
-import RegionAreaRule from '../../../rules/regionAreaRule';
+import { Position } from '../../../primitives.js';
+import RegionAreaRule from '../../../rules/regionAreaRule.js';
 import BTModule, {
   BTGridData,
   BTTile,
   CheckResult,
   IntArray2D,
   colorToBTTile,
-} from '../data';
+} from '../data.js';
 
 export default class RegionAreaBTModule extends BTModule {
   public instr: RegionAreaRule;

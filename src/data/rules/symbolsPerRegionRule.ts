@@ -1,11 +1,17 @@
-import Rule, { SearchVariant } from './rule';
-import GridData from '../grid';
-import { AnyConfig, ConfigType } from '../config';
-import { Color, Comparison, Position, RuleState, State } from '../primitives';
-import { array } from '../dataHelper';
-import LetterSymbol from '../symbols/letterSymbol';
-import Symbol from '../symbols/symbol';
-import GridConnections from '../gridConnections';
+import Rule, { SearchVariant } from './rule.js';
+import GridData from '../grid.js';
+import { AnyConfig, ConfigType } from '../config.js';
+import {
+  Color,
+  Comparison,
+  Position,
+  RuleState,
+  State,
+} from '../primitives.js';
+import { array } from '../dataHelper.js';
+import LetterSymbol from '../symbols/letterSymbol.js';
+import Symbol from '../symbols/symbol.js';
+import GridConnections from '../gridConnections.js';
 
 export default class SymbolsPerRegionRule extends Rule {
   private static readonly SYMBOL_POSITIONS = [

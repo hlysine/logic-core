@@ -1,10 +1,10 @@
-import GridData from '../grid';
-import GridConnections from '../gridConnections';
-import Rule from '../rules/rule';
-import TileData from '../tile';
-import Symbol from '../symbols/symbol';
-import Instruction from '../instruction';
-import { AnyConfig, ConfigType } from '../config';
+import GridData from '../grid.js';
+import GridConnections from '../gridConnections.js';
+import Rule from '../rules/rule.js';
+import TileData from '../tile.js';
+import Symbol from '../symbols/symbol.js';
+import Instruction from '../instruction.js';
+import { AnyConfig, ConfigType } from '../config.js';
 import {
   Color,
   Comparison,
@@ -16,13 +16,13 @@ import {
   OrientationToggle,
   directionToggle,
   orientationToggle,
-} from '../primitives';
-import { array, escape, unescape } from '../dataHelper';
-import { allRules } from '../rules';
-import { allSymbols } from '../symbols';
-import SerializerBase from './serializerBase';
-import { Puzzle, PuzzleMetadata } from '../puzzle';
-import { ControlLine, Row } from '../rules/musicControlLine';
+} from '../primitives.js';
+import { array, escape, unescape } from '../dataHelper.js';
+import { allRules } from '../rules/index.js';
+import { allSymbols } from '../symbols/index.js';
+import SerializerBase from './serializerBase.js';
+import { Puzzle, PuzzleMetadata } from '../puzzle.js';
+import { ControlLine, Row } from '../rules/musicControlLine.js';
 
 const OFFSETS = [
   { x: 0, y: -1 },

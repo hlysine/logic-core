@@ -1,12 +1,12 @@
 import { Solver, Optimize, Arith } from 'z3-solver';
-import GridData from '../../../grid';
-import Z3SolverContext from '../z3SolverContext';
-import Z3Module from './z3Module';
+import GridData from '../../../grid.js';
+import Z3SolverContext from '../z3SolverContext.js';
+import Z3Module from './z3Module.js';
 import { Point } from 'grilops';
 import CellCountRule, {
   instance as cellCountInstance,
-} from '../../../rules/cellCountRule';
-import { Color } from '../../../primitives';
+} from '../../../rules/cellCountRule.js';
+import { Color } from '../../../primitives.js';
 
 export default class CellCountModule extends Z3Module {
   public readonly id = cellCountInstance.id;

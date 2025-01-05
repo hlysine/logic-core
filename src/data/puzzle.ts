@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import GridData from './grid';
+import GridData from './grid.js';
 
 export type PuzzleMetadata = {
   /**

@@ -1,4 +1,4 @@
-import { Color, Position } from '../../primitives';
+import { Color, Position } from '../../primitives.js';
 
 export enum BTTile {
   Empty,

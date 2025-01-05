@@ -1,6 +1,6 @@
-import GridData from '../grid';
-import { RuleState } from '../primitives';
-import Instruction from '../instruction';
+import GridData from '../grid.js';
+import { RuleState } from '../primitives.js';
+import Instruction from '../instruction.js';
 
 export interface SearchVariant {
   description: string;
