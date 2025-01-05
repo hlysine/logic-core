@@ -32,10 +32,16 @@ async function generateEntry(config: Config) {
     if (typeof module !== 'object' || module === null || module === undefined)
       continue;
 
+    const relative = path.relative('src/', dataPath);
     const result: Module = {
-      path: path
-        .join('../', dataPath, file.replaceAll('.ts', '').replaceAll('\\', '/'))
-        .replaceAll('\\', '/'),
+      path:
+        './' +
+        path
+          .join(
+            relative.length === 0 ? '.' : relative,
+            file.replaceAll('.ts', '').replaceAll('\\', '/')
+          )
+          .replaceAll('\\', '/'),
       module,
       defaultExport: undefined,
       namedExports: [],
